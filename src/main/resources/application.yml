@@ -6,7 +6,7 @@ spring:
 ## Configuracion de Instancia 
 server:
   port: 8088
-
+  fullAddress: https://facets-search-engine-production.up.railway.app
 ## Configuracion del cliente de Eureka
 eureka:
   client:

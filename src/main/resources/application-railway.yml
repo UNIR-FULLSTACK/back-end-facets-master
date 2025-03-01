@@ -1,8 +1,14 @@
 ## Load Balancer must use Railway's private domain name instead of Local IP
 ## This value can be obtained in the Railway deployment tab, Settings -> Networking -> Private Networking
 eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: ${EUREKA_URL}
   instance:
     preferIpAddress: false
+    hostname: facets-search-engine-production.up.railway.app
     non-secure-port-enabled: true
     secure-port-enabled: false
     non-secure-port: ${server.port}
