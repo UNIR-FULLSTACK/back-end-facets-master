@@ -21,7 +21,7 @@ import com.unir.facets.service.BookService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-@CrossOrigin(origins = {"http://localhost:3000", "https://spring-cloud-gateway-production-9d8a.up.railway.app"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://spring-cloud-gateway-production-9d8a.up.railway.app", "https://relatos-de-papel-rho.vercel.app"})
 @RestController
 @RequiredArgsConstructor
 @Slf4j
