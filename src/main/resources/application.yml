@@ -9,10 +9,10 @@ server:
 
 ##Elasticsearch config
 elasticsearch:
-  host: ${ELASTICSEARCH_HOST}
+  host: ${ELASTICSEARCH_HOST:master-unir-8881725203.us-west-2.bonsaisearch.net}
   credentials:
-    user: ${ELASTICSEARCH_USER}
-    password: ${ELASTICSEARCH_PWD}
+    user: ${ELASTICSEARCH_USER:q4c0wee2ed}
+    password: ${ELASTICSEARCH_PWD:1jmk8acg34}
 logging:
   level:
     tracer: TRACE
