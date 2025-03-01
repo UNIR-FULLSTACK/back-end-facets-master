@@ -7,6 +7,15 @@ spring:
 server:
   port: 8088
 
+## Configuracion del cliente de Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+    hostname: back-end-facets-master
+
 ##Elasticsearch config
 elasticsearch:
   host: ${ELASTICSEARCH_HOST:master-unir-8881725203.us-west-2.bonsaisearch.net}
